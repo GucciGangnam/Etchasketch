@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<div class="site">
+    <div class="pad">
+        <div class="title"> <h1>Etch-a-sketch</h1></div>
+        <div class="board"></div>
+        <div class="buttons">
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('gray')">Shade</button>
+            <div class="sliders">
+                <input type="range" id ="size" name ="size" min ="16" max ="64" value="64" step="8" oninput="this.nextElementSibling.value = this.value" onchange="changeSize(this.value), resetBoard()" >
+                <output>64</output>
+                <label for="size">Size</label>
+                </div>
+            <button onclick="changeColor('rainbow')">Rainbow</button>
+            <button onclick="resetBoard ()">Reset</button>
+            
+            
+            
+        </div>
+        
+    </div>
+</div>
+   
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
