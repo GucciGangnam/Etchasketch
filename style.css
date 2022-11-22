@@ -19,9 +19,7 @@
    
 }
 
-h1 { 
-   
-}
+
 
 .pad { 
     display: flex;
@@ -33,6 +31,8 @@ h1 {
     padding-right: 5rem;
     box-shadow: 5px 10px gray;
     border-radius: 5%;
+    
+    
 }
 
 .buttons { 
