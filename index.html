@@ -18,9 +18,10 @@
             <button onclick="changeColor('black')">Black</button>
             <button onclick="changeColor('gray')">Shade</button>
             <div class="sliders">
-                <input type="range" id ="size" name ="size" min ="16" max ="64" value="64" step="8" oninput="this.nextElementSibling.value = this.value" onchange="changeSize(this.value), resetBoard()" >
+                <input type="range" class="slider" id ="size" name ="size" min ="16" max ="64" value="64" step="8" oninput="this.nextElementSibling.value = this.value" onchange="changeSize(this.value), resetBoard()" >
+            
                 <output>64</output>
-                <label for="size">Size</label>
+                <label for="size">Pixel Size</label>
                 </div>
             <button onclick="changeColor('rainbow')">Rainbow</button>
             <button onclick="resetBoard ()">Reset</button>
